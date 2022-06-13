@@ -1,1 +1,1 @@
-web: cd mern-server && nodemon ./bin/www
+web: cd mern-server && node ./bin/www
