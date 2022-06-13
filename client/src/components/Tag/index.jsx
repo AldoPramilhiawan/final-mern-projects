@@ -10,7 +10,7 @@ function Tag({items, onClick}) {
   return (
     <>
       {
-        items.map((item, i) => (
+        items?.map((item, i) => (
           <Badge 
             pill 
             bg={products.tags.includes(item.name) ? 'warning' : 'secondary'} 

@@ -1,0 +1,21 @@
+{
+  "name": "final-project-mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mern-server/app.js",
+  "scripts": {
+    "heroku-postbuild": "cd mern-server && npm run build:ui",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd mern-server && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teguh-elektro/final-project-mern.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teguh-elektro/final-project-mern/issues"
+  },
+  "homepage": "https://github.com/teguh-elektro/final-project-mern#readme"
+}

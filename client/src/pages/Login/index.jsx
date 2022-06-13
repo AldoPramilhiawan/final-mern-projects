@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux'
 import { loginUser } from '../../app/api/auth'
 import { userLogin } from '../../app/features/Auth/actions'
 import { useHistory } from 'react-router'
+import { Link } from 'react-router-dom'
 
 const schema = yup.object({
   email: yup.string().email('Email harus valid').required('Email harus diisi'),
@@ -74,6 +75,9 @@ export default function Login() {
           </Form.Group>
           <Button variant="primary" type="submit" disabled={status === statusList.process}>
             { status === statusList.process ? 'Memprosess...' : 'Login'}
+          </Button>
+          <Button variant="link" type="button">
+            <Link to='/register'>Register</Link>
           </Button>
         </Form>
       </Card.Body>

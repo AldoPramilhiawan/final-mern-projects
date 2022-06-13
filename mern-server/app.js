@@ -17,9 +17,8 @@ const invoiceRoute = require('./app/invoice/router');
 
 var app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+// client
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.use(cors());
 app.use(logger('dev'));
