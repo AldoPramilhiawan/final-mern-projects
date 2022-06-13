@@ -1,1 +1,1 @@
-web: cd mern-server && npm start
+web: cd mern-server && nodemon ./bin/www
